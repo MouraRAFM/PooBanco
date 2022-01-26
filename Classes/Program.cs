@@ -2,24 +2,32 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.IO;
 
-
-namespace poobanco.Classes
+namespace PooBanco.Classes
 {
     public class Program
     {
+         
+         
         public static void Main(string[] args)
         {
-           Console.WriteLine("Hello, World!");
-               Conta _novaConta = new Conta();
-           Console.Write(_novaConta.defout());
+
            
-
-
+            int exit=4;
+            while(exit!=0)
+            {     
+                   
+                  Conta objtInicial=new Conta();
+                  objtInicial.TelaInicial();
+                  exit=objtInicial.Desicao;
+                 
+            }
+            
+           
+           
         }
 
         
     }
 }
-
-
